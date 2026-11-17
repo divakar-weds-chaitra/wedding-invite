@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divakar weds Chaitra - Wedding Invitation</title>
+
+    <!-- WhatsApp / Social Media Link Preview Meta Tags (Open Graph) -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Divakar weds Chaitra">
+    <meta property="og:title" content="Divakar weds Chaitra - Wedding Invitation">
+    <meta property="og:description" content="With divine blessings and hearts full of love, we invite you to celebrate our wedding. Tap to open!">
+    <meta property="og:url" content="https://divakar-weds-chaitra.github.io/wedding-invite/">
+    <meta property="og:image" itemprop="image" content="https://divakar-weds-chaitra.github.io/wedding-invite/preview.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1080">
+    <meta property="og:image:height" content="1260">
+
+    <!-- Twitter / Other App Preview Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Divakar weds Chaitra - Wedding Invitation">
+    <meta name="twitter:description" content="With divine blessings and hearts full of love, we invite you to celebrate our wedding. Tap to open!">
+    <meta name="twitter:image" content="https://divakar-weds-chaitra.github.io/wedding-invite/preview.png">
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts -->
@@ -322,7 +340,7 @@
                 </p>
             </div>
 
-    <!-- Google Map Button Section -->
+            <!-- Google Map Button Section -->
             <div class="pt-1 pb-1 flex flex-col items-center fade-in-section">
                 <a href="https://maps.google.com/?q=Sri+Nimishamba+Devi+Temple+RR+Nagar+Bengaluru" target="_blank" class="inline-flex items-center space-x-2 py-2.5 px-6 rounded-full bg-gradient-to-r from-[#7a2839] to-[#5a1e2b] text-[#fff] font-['Cinzel'] text-xs tracking-[0.2em] font-bold shadow-md hover:opacity-95 transition-all">
                     <i class="fa-solid fa-map-location-dot"></i>
@@ -409,13 +427,9 @@
                     console.log("Audio play failed.", err);
                 });
                 
-                // Trigger smooth Om wheel zoom-and-spin opening animation & overlay fade
                 overlay.classList.add('opening');
-                
-                // Gently fade in and slide up the main invitation card with silky smoothness
                 mainContainer.classList.add('visible');
 
-                // Cleanly remove overlay after transition completes
                 setTimeout(() => {
                     overlay.style.display = 'none';
                 }, 1800);
